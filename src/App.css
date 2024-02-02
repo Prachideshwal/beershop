@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+:root {
+  --primary: #41030c;
+  --secondary: #9cd021;
+  --white: #fff;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+}
+
+.btn:hover {
+  background-color: #99d923;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary);
+}
+
+header .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header a {
+  color: var(--white);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+header .brand a {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .nav-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header .nav-links li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+header .nav-links li:last-child {
+  margin-right: 0;
+}
+
+/* Add Page */
+.add-content {
+  padding: 50px 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-content .input-wrapper input {
+  width: 100%;
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+.results {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.results li {
+  list-style: none;
+}
+
+.result-card {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10%;
+}
+
+
+.result-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-card .info .title {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0;
+}
+
+.result-card .info .release-date {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--primary);
+  margin: 0;
+}
+
+.result-card .controls button {
+  margin-right: 10px;
+}
+
+/* Movie Page */
+.movie-page {
+  padding: 30px 0;
+}
+
+.movie-page .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.movie-page .heading {
+  color: var(--primary);
+  margin: 0;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .movie-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.movie-page .no-movies {
+  color: #c4c4c4;
+  font-size: 3rem;
+  text-align: center;
+}

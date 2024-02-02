@@ -1,0 +1,118 @@
+.poster-wrappers1{
+    position: relative;
+    width:350px;
+    height:210px;
+     box-shadow:-3px 3px 10px 1px rgb(192, 191, 191);
+    margin: 15px;
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+}
+
+.results1{
+    width:95vw;
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+   
+}
+.poster1{
+    width: 50px;
+    height: 100px;
+    background-size: cover;
+   
+   
+    border-radius:3px;
+    margin:15px;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.poster-wrappers1:hover{
+    transform: scale(1.05);
+    opacity:0.8;
+    transition:all 1s ease-in-out;
+    cursor:pointer;
+}
+.card-container1{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin:10px;
+    text-decoration: none;
+}
+.info1{
+    display: flex;
+    justify-content: space-between;
+}
+.info1>div>h4{
+    margin:0px 13px;
+}
+.btn1{
+    background-color: none;
+    color:gray;
+    position:absolute;
+    right:20px;
+    top:10px;
+    z-index: 100;
+
+}
+.btn1:hover{
+    color:#ec0e58;
+}
+.activecolor{
+    color: rgb(152, 210, 55);
+    font-weight: 900;
+    font-size: 20px;
+}
+.btn2{
+    background-color: none;
+    color:rgb(152, 212, 49);
+    position:absolute;
+    right:20px;
+    top:10px;
+    z-index: 100;
+
+}
+.btn2:hover{
+    color:#481114;
+}
+a{
+    text-decoration: none;
+}
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+   
+}
+.input2{
+  width: 30vw;
+  height: 45px;
+  border-radius:4px;
+  background-color: #481114;
+  color: white;
+}
+::placeholder{
+    padding:30px;
+    background-color: #481114;
+    color: white;
+}
+
+#btn-success{
+    vertical-align:super;   
+    
+}
+.faviort-icon{
+    color: #f70a0a;
+    vertical-align:sub;
+   
+}
+
